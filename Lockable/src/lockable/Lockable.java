@@ -7,15 +7,11 @@ package lockable;
 
 /**
  *
- * @author Mr. Tholking
+ * @author Spencer Cheng
  */
-public class Lockable {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public interface Lockable {    
+    public void setKey(int key);
+    public void lock(int key);
+    public void unlock(int key);
+    public boolean locked();
 }
